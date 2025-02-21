@@ -1,5 +1,6 @@
 body {
     background-color: rgb(32, 32, 32);
+    font-family: Arial, sans-serif;
 }
 
 .badge {
@@ -10,26 +11,6 @@ body {
     left: 0;
 }
 
-.options {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-}
-
-.options a {
-    background-color: white; 
-    color: black !important;
-    padding: 0.5rem 1rem; 
-    border-radius: 25px; 
-    text-decoration: none; 
-    margin-left: 0.75rem;
-    font-weight: 500;
-}
-
-.options a:hover {
-    background-color: #e0e0e0; 
-}
-
 .chat-container {
     text-align: center;
     width: 60%;
@@ -38,33 +19,65 @@ body {
     padding: 20px;
     border-radius: 15px;
     position: absolute;
-    top: 30%;
-    left: 30%;
-}
-
-.chat-container h2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
-.chat-container form {
-    background-color: #3a3a3a;
-    border-radius: 25px;
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background: #3a3a3a;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.chat-box .user-message, .chat-box .bot-message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 80%;
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot-message {
+    background: #5c5c5c;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+}
+
+form {
     display: flex;
     justify-content: space-between;
+    background-color: #3a3a3a;
+    border-radius: 25px;
     padding: 10px;
-    height: 60px;
+    height: 50px;
     width: 100%;
 }
 
-.chat-container form input {
+form input {
     width: 100%;
     border: none;
     background: none;
     color: white;
     outline: none;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
-.chat-container form button {
-    font-weight: 500;
+form button {
+    background: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 50px;
 }

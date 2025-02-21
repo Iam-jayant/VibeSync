@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibesync</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>VibeSync</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div>
-        <span class="badge text-bg-dark">Vibesync</span>
-        <h2>Hi, I'm Vibesync.</h2>
-        <p>What can I help with?</p>
-        <div class="container chat-container">
-            <form action="/chat" method="POST">
-                <input type="text" placeholder="Message ChatGPT">
-                <button type="submit" class="btn btn-light rounded-pill">Send</button>
+    <span class="badge text-bg-dark">Vibesync</span>
+
+    <div class="container">
+        <div class="chat-container">
+            <h2>Hi, I'm Vibesync.</h2>
+            <p>What can I help with?</p>
+
+            <div class="chat-box" id="chat-box">
+                <!-- Messages will appear here -->
+            </div>
+
+            <form id="chat-form">
+                <input type="text" id="message" placeholder="Message Vibesync" required>
+                <button type="submit" class="btn btn-light rounded-pill"><i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="/script.js"></script>
 </body>
 </html>
