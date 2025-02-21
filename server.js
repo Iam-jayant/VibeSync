@@ -45,3 +45,4 @@ app.post("/chat", async (req, res) => {
 app.listen(8080, () => {
     console.log("Server is listening on http://localhost:8080/chatbot");
 });
+app.use(express.static('public'));
