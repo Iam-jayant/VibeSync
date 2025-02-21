@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             const data = await response.json();
-            const botResponse = data[0]?.generated_text || "Sorry, I couldn't understand that.";
+            console.log(data);
+            
+            // Correct extraction based on Together API response format
+            const botResponse = data.choices?.[0]?.message?.content || "Sorry, I couldn't understand that.";
 
             // Display bot response
             appendMessage("bot", botResponse);
@@ -33,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function appendMessage(sender, text) {
+        console.log("i am running");
         const messageDiv = document.createElement("div");
         messageDiv.classList.add(sender === "user" ? "user-message" : "bot-message");
         messageDiv.innerText = text;
