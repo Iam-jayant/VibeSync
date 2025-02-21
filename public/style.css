@@ -46,7 +46,7 @@ body {
 }
 
 .user-message {
-    background: #5c5c5c;
+    background: #314fbd;
     color: white;
     align-self: flex-end;
     text-align: right;
@@ -107,4 +107,18 @@ form button {
 .message-wrapper {
     display: flex;
     width: 100%;
+}
+/* Hide scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+html {
+    -ms-overflow-style: none;
 }
