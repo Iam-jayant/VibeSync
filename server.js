@@ -15,11 +15,11 @@ app.get("/chatbot", (req, res) => {
     res.render("index.ejs");
 });
 
-app.get("/videsync", (req, res) => {
+app.get("/vibesync", (req, res) => {
     res.render("chat.ejs");
 });
 
-app.get("/chat", async (req, res) => {
+app.post("/chat", async (req, res) => {
     try {
         const response = await axios.get('https://api.example.com/data');
         res.json(response.data);
