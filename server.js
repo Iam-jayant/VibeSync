@@ -1,5 +1,5 @@
 const express = require("express");
-const axios = require("axios"); // Use require instead of import
+const axios = require("axios");
 const path = require("path");
 const engine = require('ejs-mate');
 
@@ -18,10 +18,10 @@ app.get("/vibesync", (req, res) => {
 app.get("/chat", async (req, res) => {
     try {
         const response = await axios.get('https://api.example.com/data');
-        res.json(response.data); // Send data as response
+        res.json(response.data);
     } catch (error) {
         console.error('Error:', error.message);
-        res.status(500).json({ error: "Failed to fetch data" }); // Send error response
+        res.status(500).json({ error: "Failed to fetch data" });
     }
 });
 
