@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <span class="badge text-bg-dark">Vibesync</span>
+    <div class="d-flex align-items-center" style="margin: 0.5rem 0 0 1rem;">
+        <img src="/whitechatbot.png" alt="" style="height: 2.5rem;">
+        <a class="navbar-brand ms-2" href="/vibesync" style="color: #fff; font-size: 2rem; text-decoration: none;"><b>Vibesync</b></a>
+    </div>
 
     <div class="container">
         <div class="intro">
-            <h2>Hi, I'm Vibesync.</h2>
-            <p>What can I help with?</p>
+            <h2 style="font-weight: 700;">Hi, I'm Vibesync.</h2>
+            <p style="font-family: 'Helvetica', sans-serif;">What can I help with?</p>
         </div>
         <div class="chat-box" id="chat-box">
             <!-- Messages will appear here -->
         </div>
         <div class="chat-container">
             <form id="chat-form">
-                <input type="text" id="message" placeholder="Message Vibesync" required>
+                <input type="text" id="message" placeholder="Ask Vibesync" required>
                 <button type="submit" class="btn btn-light rounded-pill"><i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
