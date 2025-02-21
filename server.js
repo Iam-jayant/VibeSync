@@ -11,8 +11,12 @@ app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, "public")));
 app.engine('ejs', engine);
 
-app.get("/vibesync", (req, res) => {
+app.get("/chatbot", (req, res) => {
     res.render("index.ejs");
+});
+
+app.get("/videsync", (req, res) => {
+    res.render("chat.ejs");
 });
 
 app.get("/chat", async (req, res) => {
@@ -26,5 +30,5 @@ app.get("/chat", async (req, res) => {
 });
 
 app.listen(8080, () => {
-    console.log("Server is listening on http://localhost:8080/vibesync");
+    console.log("Server is listening on http://localhost:8080/chatbot");
 });

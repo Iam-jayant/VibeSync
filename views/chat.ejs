@@ -1,0 +1,16 @@
+<% layout("/layouts/boilerplate.ejs") -%>
+
+<div>
+    <span class="badge text-bg-dark">ChatwithAI</span>
+    <div class="options">
+        <a href="">Log in</a>
+        <a href="">Sign up</a>
+    </div>
+    <div class="container chat-container">
+        <h2>What can I help with?</h2>
+        <form action="/chat" method="POST">
+            <input type="text" placeholder="Message ChatGPT">
+            <button type="submit" class="btn btn-light rounded-pill">Send</button>
+        </form>
+    </div>
+</div>
