@@ -17,6 +17,10 @@ app.use(express.json());
 const API_URL = "https://api.together.xyz/v1/chat/completions"; 
 const API_KEY = process.env.TOGETHER_API_KEY;
 
+app.get("/", (req, res) => {
+    res.redirect("/chatbot"); // Redirects "/" to "/chatbot"
+});
+
 app.get("/chatbot", (req, res) => {
     res.render("index.ejs");
 });
