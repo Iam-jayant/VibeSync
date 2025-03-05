@@ -1,9 +1,9 @@
 <%- layout("/layouts/boilerplate") %>
 
 <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center">
-    <div class="col-8 text-center mb-5">
-        <h2 class="mb-3" style="color: rgb(0, 0, 0); font-weight: 700;">Vibesync - Your Safe Space, Powered by AI.</h2>
-        <p class="lead" style="color:#292A2D; font-family: 'Helvetica', sans-serif;">
+    <div class="col-12 col-md-10 col-lg-8 text-center mb-5 px-3">
+        <h2 class="mb-3" style="color: rgb(0, 0, 0); font-weight: 700; font-size: clamp(1.5rem, 5vw, 2.5rem);">Vibesync - Your Safe Space, Powered by AI.</h2>
+        <p class="lead" style="color:#292A2D; font-family: 'Helvetica', sans-serif; font-size: clamp(1rem, 3vw, 1.25rem);">
             Your personal space for mental clarity, emotional balance, and self-growth. Designed with a calming aesthetic and backed by intelligent AI, VibeSync provides a safe, non-judgmental environment where you can express yourself freely, track your emotions, and find the support you need.
             No logins, no barriers—just an open space to connect, reflect, and thrive. Because your mental well-being matters. 💙
         </p>
@@ -20,4 +20,12 @@
         background-size: cover;
         color: rgb(0, 0, 0); 
     }
+    
+    @media (max-width: 768px) {
+        .btn-lg {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+    }
 </style>
+
