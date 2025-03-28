@@ -8,6 +8,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
     <style>
+        /* Background with a slightly greenish-white tone */
+        body {
+            background-color: #f0f8f4; /* Light greenish-white */
+            color: #000; /* Ensure all text is black */
+        }
+
+        .chat-box {
+            background-color: #f0f8f4; /* White background for chat box */
+            border-radius: 10px;
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .chat-container {
+            background-color: #e6f2e6; /* Soft greenish-white for input area */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* User message styling */
+        .user-message {
+            background-color: #d4edda; /* Light green similar to Aarogyam */
+            color: #000; /* Black text */
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Bot response styling */
+        .bot-message {
+            background-color: #c3e6cb; /* Aarogyam green */
+            color: #000; /* Black text */
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .intro h2, .intro p {
+            color: #000; /* Ensure "Hi, I'm Aarogyam" and other text are black */
+        }
+
         @media (max-width: 768px) {
             .container {
                 width: 100%;
@@ -26,14 +68,10 @@
     </style>
 </head>
 <body>
-    <div class="d-flex align-items-center p-2">
-        <img src="/white-chatbot.png" alt="VibeSync Logo" class="img-fluid" style="height: 2.5rem;">
-        <a class="navbar-brand ms-2" href="/vibesync" style="color: #fff; font-size: clamp(1.5rem, 5vw, 2rem); text-decoration: none;"><b>Vibesync</b></a>
-    </div>
 
     <div class="container">
         <div class="intro text-center text-md-start">
-            <h2 style="font-weight: 700;">Hi, I'm Vibesync.</h2>
+            <h2 style="font-weight: 700;">Hi, I'm Aarogyam Bot.</h2>
             <p style="font-family: 'Helvetica', sans-serif;">What can I help with?</p>
         </div>
         <div class="chat-box" id="chat-box">
@@ -41,7 +79,7 @@
         </div>
         <div class="chat-container">
             <form id="chat-form" class="d-flex">
-                <input type="text" id="message" class="form-control" placeholder="Ask Vibesync" required>
+                <input type="text" id="message" class="form-control" placeholder="Ask Aarogyam" required>
                 <button type="submit" class="btn btn-light rounded-pill ms-2"><i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
